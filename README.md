@@ -2,5 +2,5 @@
 
 ### There are two folders :
 
-  old website (contains the files of old version of the website)
-  new website (will contain the files of new version the website
+  1. old website (contains the files of old version of the website)
+  2. new website (will contain the files of new version the website
