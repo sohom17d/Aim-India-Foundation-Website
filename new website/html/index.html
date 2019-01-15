@@ -90,7 +90,7 @@
             <img src="../assets/images/Causes/environment.jpeg" alt="Environment" width="100%" height="100vh">
             <div class="carousel-caption">
               <h3>Environment</h3>
-              <p>The atmosphere in New York is lorem ipsum.</p>
+              <p>Contributing significantly for eco-development, habitat promotion and environmental management.</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@
             <img src="../assets/images/Causes/education.jpeg" alt="Education" width="100%" height="100vh">
             <div class="carousel-caption">
               <h3>Education</h3>
-              <p>Thank you, Chicago - A night we won't forget.</p>
+              <p>Our education programmes are designed for children who have been born in deprived communities to find hope and meaning in life.</p>
             </div>
           </div>
 
@@ -106,7 +106,7 @@
             <img src="../assets/images/Causes/health care.jpeg" alt="Health Care" width="100%" height="100vh">
             <div class="carousel-caption">
               <h3>Health Care</h3>
-              <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+              <p>Estimates suggest that every day, more than 6,000 under-fives die in India and more than half of these deaths are caused by malnutrition.</p>
             </div>
           </div>
 
@@ -114,7 +114,7 @@
             <img src="../assets/images/Causes/relief to poor.jpeg" alt="Relief To Poor" width="100%" height="100vh">
             <div class="carousel-caption">
               <h3>Relief To Poor</h3>
-              <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+              <p>Every individual also deserves dignity, we ensure the same by providing them respect, human touch, free food and dry ration.</p>
             </div>
           </div>
 
@@ -122,7 +122,7 @@
             <img src="../assets/images/Causes/women empowerment.jpeg" alt="Women Empowerment" width="100%" height="100vh">
             <div class="carousel-caption">
               <h3>Women Empowerment</h3>
-              <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+              <p>Aim India Foundation’s ‘Awakening Women’s Soul’ focuses on empowering women of all age groups, by proving basic resources and strengthening their skills to help them maintain a healthy lifestyle, and regain stability and positivity.</p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@
             <img src="../assets/images/Causes/awareness.jpeg" alt="Awareness" width="100%" height="100vh">
             <div class="carousel-caption">
               <h3>Awareness</h3>
-              <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+              <p>We conduct awareness lectures and seminars for companies, educational institutes, housing societies, service clubs, other NGO’s etc.</p>
             </div>
           </div>
         </div>
@@ -197,15 +197,15 @@
           <div class="row text-center">
             <div class="col-sm-4">
               <div class="thumbnail">
-                <img src="../assets/images/Donate/donate.jpeg" alt="Donate" width="400" height="300">
+                <img src="../assets/images/Donate/donate.jpeg" alt="Donate">
                 <p><strong>Donate</strong></p>
-                <p>We rely on the generosity of people like you to run our projects.</p>
+                <p>We rely on the generosity and different types of contributions and in-kind support of people like you to run our projects.</p>
                 <button class="btn" data-toggle="modal" data-target="#myModal">Know More</button>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="thumbnail">
-                <img src="../assets/images/Donate/volunteer.jpeg" alt="Volunteer" width="400" height="300">
+                <img src="../assets/images/Donate/volunteer.jpeg" alt="Volunteer">
                 <p><strong>Become a Volunteer</strong></p>
                 <p>Volunteering does not require a special degree or prior experience. It is simply a willingness to help.</p>
                 <button class="btn" data-toggle="modal" data-target="#myModal">Know More</button>
@@ -213,7 +213,7 @@
             </div>
             <div class="col-sm-4">
               <div class="thumbnail">
-                <img src="../assets/images/Donate/support.jpeg" alt="Support" width="400" height="300">
+                <img src="../assets/images/Donate/support.jpeg" alt="Support">
                 <p><strong>Support Us</strong></p>
                 <p>You can sponsor one or more projects of AIM INDIA FOUNDATION making a regulard/onetime payment. </p>
                 <button class="btn" data-toggle="modal" data-target="#myModal">Know More</button>
@@ -328,15 +328,15 @@
       </div>
       <!-- .......................... Contact end  ....................... -->
 
-
-
     </main>
     <!-- .......................... Main end ............................... -->
 
 
+
+
     <!-- .......................... Footer start ........................... -->
     <footer class="container-fluid text-center">
-      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="To top">
         <span class="glyphicon glyphicon-chevron-up"></span>
       </a><br><br>
       <div class="row">
@@ -380,6 +380,36 @@
     </footer>
     <!-- ............................ Footer end ............................. -->
 
+    <script>
+    $(document).ready(function(){
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+    </script>
 
   </body>
 
