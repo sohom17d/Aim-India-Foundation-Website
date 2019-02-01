@@ -57,6 +57,10 @@ background-color: #fff;
 color: #000;
 }
 
+.navbar{
+  z-index: 100;
+}
+
 .navbar {
 background-color: #fff;
 border: 0;
